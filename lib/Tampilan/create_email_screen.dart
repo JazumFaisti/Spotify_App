@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/create_password_screen.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/create_password_screen.dart';
 
 class CreateEmailScreen extends StatefulWidget {
   const CreateEmailScreen({super.key});
@@ -10,7 +10,8 @@ class CreateEmailScreen extends StatefulWidget {
 }
 
 class _CreateEmailScreenState extends State<CreateEmailScreen> {
-  String text = "";
+  String email = ""; // Variabel untuk menyimpan email
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +48,7 @@ class _CreateEmailScreenState extends State<CreateEmailScreen> {
                 child: TextField(
                   onChanged: (value) {
                     setState(() {
-                      text = value;
+                      email = value; // Set email saat pengguna mengetik
                     });
                   },
                   style: const TextStyle(
@@ -65,9 +66,7 @@ class _CreateEmailScreenState extends State<CreateEmailScreen> {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 8,
-              ),
+              const SizedBox(height: 8),
               const Row(
                 children: [
                   Text(
@@ -82,16 +81,16 @@ class _CreateEmailScreenState extends State<CreateEmailScreen> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 35,
-              ),
+              const SizedBox(height: 35),
               GestureDetector(
                 onTap: () {
-                  if (text.length >= 6) {
+                  if (email.isNotEmpty) {
+                    // Navigasi ke layar password dengan email yang dimasukkan
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const CreatePasswordScreen(),
+                        builder: (context) =>
+                            CreatePasswordScreen(email: email),
                       ),
                     );
                   }
@@ -100,7 +99,7 @@ class _CreateEmailScreenState extends State<CreateEmailScreen> {
                   height: 45,
                   width: 90,
                   decoration: BoxDecoration(
-                    color: (text.length >= 6)
+                    color: (email.isNotEmpty)
                         ? MyColors.whiteColor
                         : MyColors.lightGrey,
                     borderRadius: const BorderRadius.all(
@@ -165,10 +164,7 @@ class _Header extends StatelessWidget {
               color: MyColors.whiteColor,
             ),
           ),
-          const SizedBox(
-            height: 32,
-            width: 32,
-          ),
+          const SizedBox(height: 32, width: 32),
         ],
       ),
     );

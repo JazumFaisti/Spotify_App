@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/data/model/artist.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/data/model/artist.dart';
 
 class ArtistAvatar extends StatefulWidget {
   const ArtistAvatar({

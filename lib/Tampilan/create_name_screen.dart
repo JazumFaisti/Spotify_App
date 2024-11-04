@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/bloc/artist/artist_bloc.dart';
-import 'package:spotify_app/bloc/artist/artist_event.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/choose_artist_screen.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/Fitur/artist/artist_bloc.dart';
+import 'package:spotify_clone/Fitur/artist/artist_event.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/choose_artist_screen.dart';
 
 class CreateNameScreen extends StatefulWidget {
   const CreateNameScreen({super.key});

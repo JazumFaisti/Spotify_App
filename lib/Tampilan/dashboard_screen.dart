@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/home_screen.dart';
-import 'package:spotify_app/ui/library_screen.dart';
-import 'package:spotify_app/ui/search_category_screen.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/home_screen.dart';
+import 'package:spotify_clone/Tampilan/library_screen.dart';
+import 'package:spotify_clone/Tampilan/search_category_screen.dart';
 
 class DashBoardScreen extends StatefulWidget {
   const DashBoardScreen({super.key});

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/bloc/artist/artist_bloc.dart';
-import 'package:spotify_app/bloc/artist/artist_state.dart';
-import 'package:spotify_app/bloc/podcast/pocast_bloc.dart';
-import 'package:spotify_app/bloc/podcast/podcast_event.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/data/model/artist.dart';
-import 'package:spotify_app/ui/choose_podcast_screen.dart';
-import 'package:spotify_app/widgets/artist_avatar_widget.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/Fitur/artist/artist_bloc.dart';
+import 'package:spotify_clone/Fitur/artist/artist_state.dart';
+import 'package:spotify_clone/Fitur/podcast/pocast_bloc.dart';
+import 'package:spotify_clone/Fitur/podcast/podcast_event.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/data/model/artist.dart';
+import 'package:spotify_clone/Tampilan/choose_podcast_screen.dart';
+import 'package:spotify_clone/widgets/artist_avatar_widget.dart';
 
 class ChooseArtistScreen extends StatelessWidget {
   const ChooseArtistScreen({super.key});

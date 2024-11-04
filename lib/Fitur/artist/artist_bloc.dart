@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/artist/artist_event.dart';
-import 'package:spotify_app/bloc/artist/artist_state.dart';
-import 'package:spotify_app/data/repository/artist_repository.dart';
+import 'package:spotify_clone/Fitur/artist/artist_event.dart';
+import 'package:spotify_clone/Fitur/artist/artist_state.dart';
+import 'package:spotify_clone/data/repository/artist_repository.dart';
 
 class ArtistBloc extends Bloc<ArtistEvent, ArtistState> {
   final ArtistRepository _artistRepository;

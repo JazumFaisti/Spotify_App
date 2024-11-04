@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
+import 'package:spotify_clone/constants/constants.dart';
 import 'package:animations/animations.dart';
-import 'package:spotify_app/ui/lyrics_screen.dart';
+import 'package:spotify_clone/Tampilan/lyrics_screen.dart';
 
 class LyricsSection extends StatelessWidget {
   const LyricsSection({super.key});

@@ -1,4 +1,4 @@
-import 'package:spotify_app/data/model/playlist_track.dart';
+import 'package:spotify_clone/data/model/playlist_track.dart';
 
 class Playlist {
   String time;

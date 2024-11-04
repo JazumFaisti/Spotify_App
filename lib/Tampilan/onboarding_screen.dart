@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/create_email_screen.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/create_email_screen.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/data/model/album.dart';
-import 'package:spotify_app/ui/share_song_screen.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/data/model/album.dart';
+import 'package:spotify_clone/Tampilan/share_song_screen.dart';
 
 class AlbumControlScreen extends StatelessWidget {
   const AlbumControlScreen({super.key, required this.album});

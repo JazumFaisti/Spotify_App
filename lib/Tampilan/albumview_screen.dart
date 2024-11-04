@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/album/album_bloc.dart';
-import 'package:spotify_app/bloc/album/album_state.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/data/model/album.dart';
-import 'package:spotify_app/data/model/album_track.dart';
-import 'package:spotify_app/ui/album_control_screen.dart';
-import 'package:spotify_app/ui/song_control_screen.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
-import 'package:spotify_app/widgets/stream_buttons.dart';
+import 'package:spotify_clone/Fitur/album/album_bloc.dart';
+import 'package:spotify_clone/Fitur/album/album_state.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/data/model/album.dart';
+import 'package:spotify_clone/data/model/album_track.dart';
+import 'package:spotify_clone/Tampilan/album_control_screen.dart';
+import 'package:spotify_clone/Tampilan/song_control_screen.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
+import 'package:spotify_clone/widgets/stream_buttons.dart';
 
 class AlbumViewScreen extends StatefulWidget {
   const AlbumViewScreen({super.key});

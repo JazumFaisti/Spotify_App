@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/podcast/podcast_event.dart';
-import 'package:spotify_app/bloc/podcast/podcast_state.dart';
-import 'package:spotify_app/data/repository/podcast_repository.dart';
+import 'package:spotify_clone/Fitur/podcast/podcast_event.dart';
+import 'package:spotify_clone/Fitur/podcast/podcast_state.dart';
+import 'package:spotify_clone/data/repository/podcast_repository.dart';
 
 class PodcastBloc extends Bloc<PodcastEvent, PodcastState> {
   final PodcastRepository _podcastRepository;

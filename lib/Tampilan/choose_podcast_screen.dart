@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/podcast/pocast_bloc.dart';
-import 'package:spotify_app/bloc/podcast/podcast_state.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/data/model/podcast.dart';
-import 'package:spotify_app/ui/dashboard_screen.dart';
-import 'package:spotify_app/widgets/podcast_avatar_widget.dart';
+import 'package:spotify_clone/Fitur/podcast/pocast_bloc.dart';
+import 'package:spotify_clone/Fitur/podcast/podcast_state.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/data/model/podcast.dart';
+import 'package:spotify_clone/Tampilan/dashboard_screen.dart';
+import 'package:spotify_clone/widgets/podcast_avatar_widget.dart';
 
 class ChoosePodcastScreen extends StatelessWidget {
   const ChoosePodcastScreen({super.key});

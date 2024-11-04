@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/playlist/playlist_bloc.dart';
-import 'package:spotify_app/bloc/playlist/playlist_state.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
-import 'package:spotify_app/widgets/stream_buttons.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_bloc.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_state.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
+import 'package:spotify_clone/widgets/stream_buttons.dart';
 
 class PlaylistSearchScreen extends StatelessWidget {
   const PlaylistSearchScreen({super.key, required this.cover});

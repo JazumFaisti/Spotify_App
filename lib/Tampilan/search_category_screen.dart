@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/search_screen.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/search_screen.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
 
 class SearchCategoryScreen extends StatefulWidget {
   const SearchCategoryScreen({super.key});

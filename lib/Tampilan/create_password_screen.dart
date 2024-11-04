@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/choose_gender_screen.dart';
+import 'package:supabase_flutter/supabase_flutter.dart'; // Tambahkan ini untuk Supabase
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/choose_gender_screen.dart';
 
 class CreatePasswordScreen extends StatefulWidget {
-  const CreatePasswordScreen({super.key});
+  final String email; // Ambil email dari layar sebelumnya
+
+  const CreatePasswordScreen({required this.email, super.key});
 
   @override
   State<CreatePasswordScreen> createState() => _CreatePasswordScreenState();
 }
 
 class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
-  String text = "";
+  String password = ""; // Variabel untuk menyimpan password
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,9 +49,10 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                   ),
                 ),
                 child: TextField(
+                  obscureText: true, // Menyembunyikan input password
                   onChanged: (value) {
                     setState(() {
-                      text = value;
+                      password = value; // Set password saat pengguna mengetik
                     });
                   },
                   style: const TextStyle(
@@ -65,13 +70,11 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 8,
-              ),
+              const SizedBox(height: 8),
               const Row(
                 children: [
                   Text(
-                    "Use atleast 8 characters.",
+                    "Use at least 8 characters.",
                     style: TextStyle(
                       fontFamily: "AM",
                       fontSize: 10,
@@ -82,25 +85,36 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 35,
-              ),
+              const SizedBox(height: 35),
               GestureDetector(
-                onTap: () {
-                  if (text.length >= 8) {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const ChooseGenderScreen(),
-                      ),
+                onTap: () async {
+                  if (password.length >= 8) {
+                    // Mendaftar pengguna ke Supabase
+                    final response = await Supabase.instance.client.auth.signUp(
+                      widget.email, // Menggunakan email yang diteruskan
+                      password,
                     );
+                    if (response.error == null) {
+                      // Pendaftaran berhasil
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ChooseGenderScreen(),
+                        ),
+                      );
+                    } else {
+                      // Menampilkan error jika pendaftaran gagal
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(response.error!.message)),
+                      );
+                    }
                   }
                 },
                 child: Container(
                   height: 45,
                   width: 90,
                   decoration: BoxDecoration(
-                    color: (text.length >= 8)
+                    color: (password.length >= 8)
                         ? MyColors.whiteColor
                         : MyColors.lightGrey,
                     borderRadius: const BorderRadius.all(
@@ -165,10 +179,7 @@ class _Header extends StatelessWidget {
               color: MyColors.whiteColor,
             ),
           ),
-          const SizedBox(
-            height: 32,
-            width: 32,
-          ),
+          const SizedBox(height: 32, width: 32),
         ],
       ),
     );

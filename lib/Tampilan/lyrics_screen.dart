@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/widgets/stream_buttons.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/widgets/stream_buttons.dart';
 
 class LyricsScreen extends StatelessWidget {
   const LyricsScreen({super.key});

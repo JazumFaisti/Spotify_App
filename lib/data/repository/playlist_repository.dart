@@ -1,6 +1,6 @@
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/data/datasource/playlist_datasource.dart';
-import 'package:spotify_app/data/model/playlist.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/data/datasource/playlist_datasource.dart';
+import 'package:spotify_clone/data/model/playlist.dart';
 
 abstract class PLaylistRepository {
   Future<Playlist> getList(String mix);

@@ -1,5 +1,5 @@
-import 'package:spotify_app/data/model/playlist.dart';
-import 'package:spotify_app/data/model/playlist_track.dart';
+import 'package:spotify_clone/data/model/playlist.dart';
+import 'package:spotify_clone/data/model/playlist_track.dart';
 
 abstract class PlaylistDatasource {
   Future<Playlist> trackList(String mix);

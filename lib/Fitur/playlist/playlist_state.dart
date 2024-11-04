@@ -1,4 +1,4 @@
-import 'package:spotify_app/data/model/playlist.dart';
+import 'package:spotify_clone/data/model/playlist.dart';
 
 abstract class PlaylistState {}
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
+import 'package:spotify_clone/constants/constants.dart';
 
 class ListeningOn extends StatefulWidget {
   const ListeningOn({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/listening_on_screen.dart';
-import 'package:spotify_app/ui/track_view_screen.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/listening_on_screen.dart';
+import 'package:spotify_clone/Tampilan/track_view_screen.dart';
 
 class BottomPlayer extends StatefulWidget {
   const BottomPlayer({super.key});

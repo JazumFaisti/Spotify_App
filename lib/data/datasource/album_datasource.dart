@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:spotify_app/data/model/album.dart';
-import 'package:spotify_app/data/model/album_track.dart';
+import 'package:spotify_clone/data/model/album.dart';
+import 'package:spotify_clone/data/model/album_track.dart';
 
 abstract class AlbumDatasource {
   Future<Album> albumList(String singer);

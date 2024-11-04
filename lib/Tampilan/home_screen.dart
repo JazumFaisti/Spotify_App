@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/bloc/album/album_bloc.dart';
-import 'package:spotify_app/bloc/album/album_event.dart';
-import 'package:spotify_app/bloc/playlist/playlist_bloc.dart';
-import 'package:spotify_app/bloc/playlist/playlist_event.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/albumview_screen.dart';
-import 'package:spotify_app/ui/playlist_search_screen.dart';
-import 'package:spotify_app/ui/setting_screen.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/Fitur/album/album_bloc.dart';
+import 'package:spotify_clone/Fitur/album/album_event.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_bloc.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_event.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/albumview_screen.dart';
+import 'package:spotify_clone/Tampilan/playlist_search_screen.dart';
+import 'package:spotify_clone/Tampilan/setting_screen.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

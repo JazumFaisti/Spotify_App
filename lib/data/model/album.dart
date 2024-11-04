@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:spotify_app/data/model/album_track.dart';
+import 'package:spotify_clone/data/model/album_track.dart';
 
 class Album {
   String albumName;

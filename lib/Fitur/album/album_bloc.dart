@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/album/album_event.dart';
-import 'package:spotify_app/bloc/album/album_state.dart';
-import 'package:spotify_app/data/repository/album_repository.dart';
+import 'package:spotify_clone/Fitur/album/album_event.dart';
+import 'package:spotify_clone/Fitur/album/album_state.dart';
+import 'package:spotify_clone/data/repository/album_repository.dart';
 
 class AlbumBloc extends Bloc<AlbumEvent, AlbumState> {
   final AlbumRepository _albumRepository;

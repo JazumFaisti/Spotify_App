@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/bloc/album/album_bloc.dart';
-import 'package:spotify_app/bloc/album/album_event.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/albumview_screen.dart';
-import 'package:spotify_app/ui/profile_screen.dart';
-import 'package:spotify_app/ui/setting_screen.dart';
-import 'package:spotify_app/widgets/album_chip.dart';
-import 'package:spotify_app/widgets/artist_chip.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
-import 'package:spotify_app/widgets/song_chip.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/Fitur/album/album_bloc.dart';
+import 'package:spotify_clone/Fitur/album/album_event.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/albumview_screen.dart';
+import 'package:spotify_clone/Tampilan/profile_screen.dart';
+import 'package:spotify_clone/Tampilan/setting_screen.dart';
+import 'package:spotify_clone/widgets/album_chip.dart';
+import 'package:spotify_clone/widgets/artist_chip.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
+import 'package:spotify_clone/widgets/song_chip.dart';
 
 class LibraryScreen extends StatelessWidget {
   const LibraryScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spotify_app/bloc/playlist/playlist_event.dart';
-import 'package:spotify_app/bloc/playlist/playlist_state.dart';
-import 'package:spotify_app/data/repository/playlist_repository.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_event.dart';
+import 'package:spotify_clone/Fitur/playlist/playlist_state.dart';
+import 'package:spotify_clone/data/repository/playlist_repository.dart';
 
 class PlaylistBloc extends Bloc<PlaylistEvent, PlaylistState> {
   final PLaylistRepository _repository;

@@ -1,4 +1,4 @@
-import 'package:spotify_app/data/model/artist.dart';
+import 'package:spotify_clone/data/model/artist.dart';
 
 abstract class ArtistDatasource {
   Future<List<Artist>> getArtistList();

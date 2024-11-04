@@ -1,6 +1,6 @@
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/data/datasource/artist_datasource.dart';
-import 'package:spotify_app/data/model/artist.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/data/datasource/artist_datasource.dart';
+import 'package:spotify_clone/data/model/artist.dart';
 
 abstract class ArtistRepository {
   Future<List<Artist>> artistList();

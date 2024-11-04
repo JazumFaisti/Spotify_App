@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/listening_on_screen.dart';
-import 'package:spotify_app/ui/lyrics_section.dart';
-import 'package:spotify_app/ui/song_control_screen.dart';
-import 'package:spotify_app/widgets/stream_buttons.dart';
-import 'package:spotify_app/widgets/video_player.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/listening_on_screen.dart';
+import 'package:spotify_clone/Tampilan/lyrics_section.dart';
+import 'package:spotify_clone/Tampilan/song_control_screen.dart';
+import 'package:spotify_clone/widgets/stream_buttons.dart';
+import 'package:spotify_clone/widgets/video_player.dart';
 
 class TrackViewScreen extends StatefulWidget {
   const TrackViewScreen({super.key});

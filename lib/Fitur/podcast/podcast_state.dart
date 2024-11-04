@@ -1,4 +1,4 @@
-import 'package:spotify_app/data/model/podcast.dart';
+import 'package:spotify_clone/data/model/podcast.dart';
 
 abstract class PodcastState {}
 

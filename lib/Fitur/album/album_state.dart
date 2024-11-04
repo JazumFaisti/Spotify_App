@@ -1,4 +1,4 @@
-import 'package:spotify_app/data/model/album.dart';
+import 'package:spotify_clone/data/model/album.dart';
 
 abstract class AlbumState {}
 

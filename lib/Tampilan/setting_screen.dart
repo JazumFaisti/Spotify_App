@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_app/constants/constants.dart';
-import 'package:spotify_app/ui/profile_screen.dart';
-import 'package:spotify_app/widgets/bottom_player.dart';
+import 'package:spotify_clone/constants/constants.dart';
+import 'package:spotify_clone/Tampilan/profile_screen.dart';
+import 'package:spotify_clone/widgets/bottom_player.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});

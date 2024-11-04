@@ -1,6 +1,6 @@
-import 'package:spotify_app/DI/service_locator.dart';
-import 'package:spotify_app/data/datasource/album_datasource.dart';
-import 'package:spotify_app/data/model/album.dart';
+import 'package:spotify_clone/DI/service_locator.dart';
+import 'package:spotify_clone/data/datasource/album_datasource.dart';
+import 'package:spotify_clone/data/model/album.dart';
 
 abstract class AlbumRepository {
   Future<Album> albumList(String singer);
